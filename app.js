@@ -15,7 +15,7 @@ app.get('/add', (req,res)=>{
 });
 
 app.listen(PORT, () => {
-    console.log(`server is running on port ${port}`);
+    console.log(`server is running on port ${PORT}`);
 });
 
 let contacts = JSON.parse(fs.readFileSync('./data/contacts.json','utf8'));
