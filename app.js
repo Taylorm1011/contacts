@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const fs = require('fs');
 
 const app =express();
-const PORT = process.env.PORT ||3000;
+const PORT = process.env.PORT || 3000;
 
 app.set('view engine', 'ejs');
 app.use(express.static('./public'));
@@ -14,7 +14,7 @@ app.get('/add', (req,res)=>{
     res.render('add');
 });
 
-app.listen(port, () => {
+app.listen(PORT, () => {
     console.log(`server is running on port ${port}`);
 });
 
