@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+    <% contacts.forEach((contact, index) => { %>
+        <div>
+            <p><%= contact.name %></p>
+            <a href="/view/<%= index %>">View</a>
+            <a href="/edit/<%= index %>">Edit</a>
+            <a href="/delete/<%= index %>">Delete</a>
+        </div>
+
+        
+    <%}) %>
+    <a href="/add" id="add">Add Conatact</a>
+</body>
+</html>
